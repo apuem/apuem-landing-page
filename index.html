@@ -4,60 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>apuem</title>
-    <link href="https://api.fontshare.com/css?f[]=supreme@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>APUEM</title>
     <style>
+        @font-face{
+            font-family: Optican Sans;
+            src: url('fonts/Optician-Sans.woff') format('woff');}
+
         body {
-            margin: 0px;
+            background: rgb(231,255,255);
+background: linear-gradient(90deg, rgba(231,255,255,1) 0%, rgba(248,212,212,1) 50%, rgba(231,255,255,1) 100%);
         }
-        .video-container {
-            overflow: hidden;
-            width: 100vw;
-            height: 100vh;
-        }
-        bg-video {
-            object-fit: cover;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-        .video-overlay {
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            opacity: 0.6;
-            position: fixed;
-        }
-        .hero-text {
-            color: white;
-            position: fixed;
-            margin: 0;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            left: 50%;
-            -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-            z-index: 1;
-            font-family: 'Supreme', sans-serif;
+
+        .title {
             font-size: 50px;
+            font-family: 'Optican Sans';
+            color: #ffffff;
             text-align: center;
-            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .disclaimer {
+            font-size: 20px;
+            font-family: 'Optican Sans';
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <p class="hero-text">
-            Animated Cover Services
-        </p>
-        <div class="video-overlay">
-            <p>test</p>
-        </div>
-        <video loop autoplay muted  id="bg-video">
-            <source src="https://cdn.jsdelivr.net/gh/apuem/static/apuem-background-video-low-quality.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
+    <div class="title">APUEM</div>
+    <div class="disclaimer">Lorem Ipsum Dolor</div>
 </body>
 </html>
